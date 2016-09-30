@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Travel Talk</title>
+
+	<!-- Start Bootstrap CDN-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- End Bootstrap CDN -->
+	<!-- Link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+	<style>
+		body {
+			background-image: url("images/terminal.jpeg");
+		}
+		.container {
+			width: 100%;
+			margin: 0 auto;
+		}
+		.traveltalk {
+			margin: -.1em;
+			font-family: 'Oswald', sans-serif;
+			font-size: 12em;
+			color: white;
+			text-shadow: 2px 2px black;
+			display: inline-block;
+		}
+		.traveltalk p {
+			letter-spacing: -14px;
+		}
+
+		.login {
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+			margin-top: 1em;
+		}
+
+		.registration {
+			width: 37%;
+			display: inline-block;
+		}
+
+		.info {
+			width: 60%;
+			border-radius: 5px;
+			float: right;
+			color: black;
+			background-color: white;
+			vertical-align: top;
+			display: inline-block;
+			padding: 0 5px;
+		}
+
+		.info p {
+			font-size: 15px;
+		}
+
+		h1 {
+			color: white;
+			text-shadow: 1px 1px black;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class='container'>
+		<div class='traveltalk'>
+			<p>Travel Talk</p>
+		</div>
+		<div class="login">
+			<h1>Login</h1>
+			<form class="form-inline">
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Enter Username">
+				</div>
+				<div class="form-group">
+				  	<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class='registration'>
+			<h1>Register</h1>
+			<form>
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Enter Your First and Last Name">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Enter a Username">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Enter Your Email Address">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="pwd" placeholder="Enter A Password">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="pwd" placeholder="Enter the Password Again">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class='info'>
+			<h3>Welcome to Travel Talk!</h3>
+			<p>Travelers from all over the planet now have a place to discuss where they've been, where they are and where they want to go with many like-minded individuals.  Tips, opinions and almost everything travel related is encouraged!  Even if you want to give some information to travelers visiting your neck of the woods!  Got a question or comment about travel?  Add it to our message board!  Enjoy your stay! </p>
+		</div>
+	</div>
+</body>
+
+</html>
