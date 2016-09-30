@@ -3,7 +3,7 @@
 
 <head>
 	<title>Travel Talk</title>
-
+	
 	<!-- Start Bootstrap CDN-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,67 +13,20 @@
 	<!-- End Bootstrap CDN -->
 	<!-- Link to Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-
-	<style>
-		body {
-			background-image: url("images/terminal.jpeg");
-		}
-		.container {
-			width: 100%;
-			margin: 0 auto;
-		}
-		.traveltalk {
-			margin: -.1em;
-			font-family: 'Oswald', sans-serif;
-			font-size: 12em;
-			color: white;
-			text-shadow: 2px 2px black;
-			display: inline-block;
-		}
-		.traveltalk p {
-			letter-spacing: -14px;
-		}
-
-		.login {
-			display: inline-block;
-			vertical-align: top;
-			float: right;
-			margin-top: 1em;
-		}
-
-		.registration {
-			width: 37%;
-			display: inline-block;
-		}
-
-		.info {
-			width: 60%;
-			border-radius: 5px;
-			float: right;
-			color: black;
-			background-color: white;
-			vertical-align: top;
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.info p {
-			font-size: 15px;
-		}
-
-		h1 {
-			color: white;
-			text-shadow: 1px 1px black;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- End Google Fonts -->
 
 </head>
 
 <body>
+	<!-- begin container -->
 	<div class='container'>
+		<!-- Travel Talk header -->
 		<div class='traveltalk'>
 			<p>Travel Talk</p>
 		</div>
+		<!-- end travel talk header -->
+		<!-- begin bootstrap login section -->
 		<div class="login">
 			<h1>Login</h1>
 			<form class="form-inline">
@@ -86,6 +39,8 @@
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
+		<!-- end login section -->
+		<!-- begin bootstrap registration section -->
 		<div class='registration'>
 			<h1>Register</h1>
 			<form>
@@ -107,12 +62,16 @@
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
+		<!-- end registration section -->
+		<!-- begin info bubble -->
 		<div class='info'>
 			<h3>Welcome to Travel Talk!</h3>
 			<p>Travelers from all over the planet now have a place to discuss where they've been, where they are and where they want to go with many like-minded individuals.  Tips, opinions and almost everything travel related is encouraged!  Even if you want to give some information to travelers visiting your neck of the woods!  Got a question or comment about travel?  Add it to our message board!</p>
 			<h3>Enjoy your stay! </h3>
 		</div>
+		<!-- end info bubble -->
 	</div>
+	<!-- end container -->
 </body>
 
 </html>

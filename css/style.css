@@ -1,0 +1,54 @@
+body {
+	background-image: url("../images/terminal.jpeg");
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.traveltalk {
+	margin: -.1em;
+	font-family: 'Oswald', sans-serif;
+	font-size: 12em;
+	color: white;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+}
+
+.traveltalk p {
+	letter-spacing: -14px;
+}
+
+.login {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	margin-top: 1em;
+}
+
+.registration {
+	width: 37%;
+	display: inline-block;
+}
+
+.info {
+	width: 60%;
+	border-radius: 5px;
+	float: right;
+	color: black;
+	margin-top: -1em;
+	background-color: white;
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.info p {
+	font-size: 15px;
+}
+
+h1 {
+	color: white;
+	text-shadow: 1px 1px black;
+}
