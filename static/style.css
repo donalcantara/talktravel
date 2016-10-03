@@ -7,6 +7,15 @@ body {
 	margin: 0 auto;
 }
 
+.errors {
+	color: red;
+	width: 0 auto;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	margin: 1em 0 0 4em;
+	text-shadow: 2px 2px white;
+}
+
 .traveltalk {
 	margin: -.1em;
 	font-family: 'Oswald', sans-serif;

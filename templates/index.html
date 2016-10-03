@@ -26,15 +26,26 @@
 			<p>Travel Talk</p>
 		</div>
 		<!-- end travel talk header -->
+		<!-- begin flashed error messages -->
+		<div class='errors'>
+		{% with messages = get_flashed_messages() %}
+    	{% if messages %}
+      	{% for message in messages %}
+        <h2>{{message}}</h2>
+      	{% endfor %}
+    	{% endif %}
+  		{% endwith %}
+  		</div>
+  		<!-- end flashed error messages -->
 		<!-- begin bootstrap login section -->
 		<div class="login">
 			<h1>Login</h1>
-			<form class="form-inline" role='form' action='login' method='POST'>
+			<form class="form-inline" role='form' action='/login' method='POST'>
 				<div class="form-group">
-					<input type="text" class="form-control" id="username" placeholder="Enter Username">
+					<input type="text" class="form-control" name="username" placeholder="Enter Username">
 				</div>
 				<div class="form-group">
-				  	<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+				  	<input type="password" class="form-control" name="password" placeholder="Enter password">
 				</div>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
@@ -45,19 +56,19 @@
 			<h1>Register</h1>
 			<form role='form' action='/register' method="POST">
 				<div class="form-group">
-					<input type="text" class="form-control" id="name" placeholder="Enter Your First and Last Name">
+					<input type="text" class="form-control" name="name" placeholder="Enter Your First and Last Name">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="username" placeholder="Enter a Username">
+					<input type="text" class="form-control" name="username" placeholder="Enter a Username">
 				</div>
 				<div class="form-group">
-					<input type="email" class="form-control" id="email" placeholder="Enter Your Email Address">
+					<input type="email" class="form-control" name="email" placeholder="Enter Your Email Address">
 				</div>
 				<div class="form-group">
-					<input type="password" class="form-control" id="password" placeholder="Enter A Password">
+					<input type="password" class="form-control" name="password" placeholder="Enter A Password">
 				</div>
 				<div class="form-group">
-					<input type="password" class="form-control" id="confirm" placeholder="Enter the Password Again">
+					<input type="password" class="form-control" name="confirm" placeholder="Enter the Password Again">
 				</div>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
@@ -72,6 +83,23 @@
 		<!-- end info bubble -->
 	</div>
 	<!-- end container -->
+
+	<h1>Database!</h1> 
+	{% for user in users: %}
+		<p>ID: {{ user['id'] }}</p>
+		<p>First Name: {{ user['name'] }}</p>
+		<p>Username: {{ user['username'] }}</p>
+		<p>Password: {{ user['password'] }}</p>
+		<p>Email: {{ user['email'] }}</p>
+		<p>Created at: {{ user['created_at'] }}</p>
+		<p>Updated at: {{ user['updated_at'] }}</p>
+		
+		<form role="form" action="/delete/{{ user['id'] }}">
+		<input type="hidden" name="delete">
+		<button type="submit" class="btn btn-default">Delete</button>
+		</form>
+	   <hr>
+	   {% endfor %}
 </body>
 
 </html>

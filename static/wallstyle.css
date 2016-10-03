@@ -1,0 +1,14 @@
+
+body {
+	background-image: url("trek.jpeg");
+	color: white;
+}
+
+.links {
+	font-size: 2em;
+	text-shadow: 1px 1px black;
+}
+
+h1, h2, h3 {
+	text-shadow: 1px 1px black;
+}
