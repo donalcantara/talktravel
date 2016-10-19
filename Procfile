@@ -1,1 +1,1 @@
-web: gunicorn server:app --log-file -
+web: python talktravel/server.py --log-file -
